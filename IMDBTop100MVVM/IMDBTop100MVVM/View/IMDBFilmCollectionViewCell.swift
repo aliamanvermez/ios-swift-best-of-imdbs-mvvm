@@ -105,9 +105,6 @@ final class IMDBFilmCollectionViewCell : UICollectionViewCell{
         if let filmDirector = viewModel.filmDirectorName?.formatted() {
             filmDirectorLabel.text = "Director \n \(filmDirector)"
         }
-      
-        
-        
         viewModel.fetchImage { [weak self] result in
             switch result {
             case .success(let data):

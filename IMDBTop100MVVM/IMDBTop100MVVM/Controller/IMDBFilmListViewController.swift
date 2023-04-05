@@ -44,7 +44,7 @@ class IMDBFilmListViewController: UIViewController, IMDBFilmListViewDelegate {
         
     }
     
-    func rmCharacterListView(_ filmListView: IMDBFilmListView, didSelectCharacter film: IMDBFilmModel) {
+    func imdbFilmListView(_ filmListView: IMDBFilmListView, didSelectCharacter film: IMDBFilmModel) {
         let viewModel = IMDBFilmDetailViewViewModel(film: film)
         let detailVC = IMDBFilmDetailViewController(viewModel: viewModel)
         print("çalıştı")

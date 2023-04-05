@@ -13,7 +13,6 @@ final class IMDBFilmDetailViewViewModel {
           self.film = film
       }
     
-    
     public func fetchImage(completion : @escaping (Result <Data, Error>) -> Void) {
         let filmImageURL = URL(string: film?.image ?? "no image")
         //TODO: Abstract to Image Manager

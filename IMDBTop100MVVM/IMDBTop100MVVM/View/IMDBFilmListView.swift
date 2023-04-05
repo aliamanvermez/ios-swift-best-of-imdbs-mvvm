@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 protocol IMDBFilmListViewDelegate: AnyObject {
-    func rmCharacterListView(_ filmListView: IMDBFilmListView, didSelectCharacter film: IMDBFilmModel)
+    func imdbFilmListView(_ filmListView: IMDBFilmListView, didSelectCharacter film: IMDBFilmModel)
 }
 
 class IMDBFilmListView: UIView {
@@ -103,7 +103,7 @@ extension IMDBFilmListView : IMDBFilmListViewViewModelDelegate {
     }
     
     func didSelectFilm(_ character: IMDBFilmModel) {
-        delegate?.rmCharacterListView(self, didSelectCharacter: character)
+        delegate?.imdbFilmListView(self, didSelectCharacter: character)
     }
     
     
